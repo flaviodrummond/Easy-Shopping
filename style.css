@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: inline-block;
+    /* Usado para que nossas caixas fiquem uma do lado da outra */
+    width: 60%;
+    /* ocupando 60% da tela */
+    margin-top: 14%;
+    padding-left: 15%;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    width: 368px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    width: 540px;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background-color: #9499EA;
+    border: none;
+    box-shadow: 0px 10px 24px 0px #9499EA19;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 37.57px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.5;
+    /* Ao clicar no botão, muda a a tonalidade da cor */
+}
+
+section {
+    display: inline-block;
+    background: rgba(93, 93, 125, 0.16);
+    /* rgba tem a útima opção como a opacidade */
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    /* posicionar nossa seção */
+}
+
+header {
+    margin: 24px 0 0 57px;
+}
+
+.link {
+    font-size: 28px;
+    line-height: 41.5px;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+.link:active {
+    opacity: .6;
+}
+
+a:nth-child(2) {
+    opacity: .4;
+    /* mudar a tonalidade apenas do nosso segundo link */
+}
+
+img {
+    position: relative;
+    /* Colocar nossa imagem relativa ao que desejamos. */
+    top: 14%;
+    right: 16%;
+}
+
+@media screen and (max-width: 1280px) {
+    main {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 74px;
+        line-height: 104px;
+        text-align: center;
+        width: auto;
+        margin: 120px 50px 50px 50px;
+    }
+
+    p {
+        font-size: 45px;
+        line-height: 75px;
+        text-align: center;
+        width: auto;
+        margin: 50px 40px;
+    }
+
+    button {
+        margin:77px auto;
+        display: block;
+    }
+
+    section {
+        display: block;
+        width: 100%;
+        height: 50%;
+        position: static;
+        padding: 50px;
+    }
+
+    img {
+        position: static;
+        max-width: 90%;
+        display: block;
+        margin: 25px auto;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    h1 {
+        font-size: 46px;
+        line-height: 60px;
+        text-align: center;
+        width: auto;
+        margin: 58px 50px 0 50px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        width: auto;
+        margin: 32px 40px;
+    }
+
+    section {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 50px;
+    }
+
+    img {
+        position: static;
+        max-width: 50%;
+        display: block;
+        margin: 25px auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 40px;
+        line-height: 52px;
+        text-align: center;
+        width: auto;
+        margin: 50px 50px 0 50px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+        width: auto;
+        margin: 15px 40px;
+    }
+
+    button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    section {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 30px;
+    }
+
+    img {
+        position: static;
+        max-width: 50%;
+        display: block;
+        margin: 50px auto;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+        width: auto;
+        margin: 30px 50px 0 50px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        width: auto;
+        margin: 15px 40px;
+    }
+
+    button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    section {
+        display: block;
+        width: 100%;
+        height: 50%;
+        position: static;
+        padding: 30px;
+    }
+
+    img {
+        position: static;
+        max-width: 50%;
+        display: block;
+        margin: 50px auto;
+    }
+
+}
